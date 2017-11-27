@@ -47,6 +47,7 @@ git commit -m "First commit"
 git push -f origin master
 git pull https://github.com/ardittot/microservices_template.git
 
-
-
+export PATH="/usr/local/bin/flask:${PATH}"
+chmod 755 -r /usr/local/bin/flask
+flask run -h 172.18.41.154 --port 80
 
