@@ -38,7 +38,15 @@ python manage.py db init
 python manage.py db migrate
 python manage.py db upgrade
 
-ln -s app api
+# Initialize github
+git init
+git remote add origin https://github.com/ardittot/microservices_template.git
+# Commit new source codes
+git add ./
+git commit -m "First commit"
+git push -f origin master
+git pull https://github.com/ardittot/microservices_template.git
+
 
 
 
